@@ -1,0 +1,37 @@
+
+
+
+
+1.0 - Initial Release
+
+1.1 - Patch
+
+ * Bugfix - Psühhoosi info tabletitel näitas valesti kui vajutada info peale ja sealt tagasi.
+ * Tekstide suuruste parandus.
+
+
+1.2 
+ *
+ *
+
+
+
+1.5
+
+Make few screens transitsions more smoothless. - butter smooth!
+Make instruction pages even more prettier! <3
+
+
+
+
+
+
+
+
+
+
+
+Parandada: 
+
+ * Listview kui clickida ipad retinal siis selectable area (oranz) on väiksem kui terve ekraan.
+

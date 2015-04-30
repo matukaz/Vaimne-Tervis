@@ -1,0 +1,57 @@
+-- Supported values for orientation:
+-- portrait, portraitUpsideDown, landscapeLeft, landscapeRight
+
+
+settings = {
+	
+	orientation = {
+		default = "portrait",
+		supported = { "portrait", } -- Device in the vertical position with the home button at the bottom
+	},
+	
+	iphone = {
+		plist = {
+			UIStatusBarHidden = false,
+			UIPrerenderedIcon = true, -- set to false for "shine" overlay
+			--UIApplicationExitsOnSuspend = true, -- uncomment to quit app on suspend
+
+            --[[
+            -- iOS app URL schemes:
+            CFBundleURLTypes =
+            {
+                {
+                    CFBundleURLSchemes =
+                    {
+                        "fbXXXXXXXXXXXXXX", -- example scheme for facebook
+                        "coronasdkapp", -- example second scheme
+                    }
+                }
+            }
+            --]]
+		}
+	},
+	
+	--[[
+	-- Android permissions
+
+	androidPermissions = {
+  		"android.permission.INTERNET",--  permits a Corona app to access the Internet.
+		"com.android.vending.CHECK_LICENSE",		--  Licensing allows you to prevent unauthorized distribution of your app. It can also be used to verify in-app billing purchases. Learn more about licensing. 
+  	},
+
+	]]--
+}
+
+
+
+application =
+{
+   license =
+   {
+      google =
+      {
+         key = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwlNoYkcwCi6i3mMnj7EwCCUnR/Xu7u4JKoo0pCQiAfTg3rEWPFXH4fcCq2lcayITnmL1d2qNIupBXVRLW6dHCcByA353cRf0YDDV5r9l3tNQhflRfkyLrH/8BRJlbH/p9XNUn9arH1V5d1GgrpZwc76NZQxNcNOHTfU26S9385R0FvIj7JLdvP/cvMu70Ughu3kmtoCUDQW/EToW3GBo79E52GWJZLSBLx/sxGgiDJZR8YN/KYwqhCiR+QFiXlrB2NpL8uUAlm+mHAJOpRdEKUh6GRdT13fV/MNI1crCpT01VqRWwR7+r60uobpbSBOERTIBaEIp3xEhkbXHf4RRnQIDAQAB",
+         policy = "serverManaged",
+      },
+   },
+}
